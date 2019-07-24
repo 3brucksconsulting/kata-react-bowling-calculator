@@ -360,6 +360,24 @@ describe('calculateNextAvailablePins', () => {
 
     expect(calculator.calculateNextAvailablePins(frames)).toEqual(result);
   });
+
+  it('givenCompleteGame_returns10', () => {
+    const frames = [
+      [10],
+      [10],
+      [10],
+      [10],
+      [10],
+      [10],
+      [10],
+      [10],
+      [10],
+      [10, 10, 10]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateNextAvailablePins(frames)).toEqual(result);
+  });
 });
 
 describe('calculateScores', () => {

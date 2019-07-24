@@ -13,6 +13,7 @@ class App extends React.Component {
     };
 
     this.handlePinButtonClick = this.handlePinButtonClick.bind(this);
+    this.handleStartNewGameClick = this.handleStartNewGameClick.bind(this);
   }
 
   handlePinButtonClick(event) {
@@ -32,12 +33,22 @@ class App extends React.Component {
     });
   }
 
+  handleStartNewGameClick(event) {
+    console.log("Start New Game");
+
+    this.setState({
+      frames: [],
+      nextAvailablePins: 10,
+    });
+  }
+
   render() {
     return (
       <div className='container-fluid'>
         <PinButtons
           nextAvailablePins={this.state.nextAvailablePins}
-          onClick={this.handlePinButtonClick}
+          handlePinButtonClick={this.handlePinButtonClick}
+          handleStartNewGameClick={this.handleStartNewGameClick}
         />
       </div>
     );
