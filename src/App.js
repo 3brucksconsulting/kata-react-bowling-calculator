@@ -1,5 +1,6 @@
 import React from 'react';
 import PinButtons from './pin_buttons';
+import Game from './game';
 import * as calculator from './calculator';
 import './bootstrap.min.css';
 
@@ -19,12 +20,10 @@ class App extends React.Component {
   handlePinButtonClick(event) {
     const roll = Number(event.target.value);
     const frames = calculator.addRoll(this.state.frames, roll);
-    const scores = calculator.calculateScores(frames);
     const nextAvailablePins = calculator.calculateNextAvailablePins(frames);
     
     console.log('roll: ', roll);
     console.log('frames: ', frames);
-    console.log('scores: ', scores);
     console.log('nextAvailablePins: ', nextAvailablePins);
 
     this.setState({
@@ -50,6 +49,7 @@ class App extends React.Component {
           handlePinButtonClick={this.handlePinButtonClick}
           handleStartNewGameClick={this.handleStartNewGameClick}
         />
+        <Game frames={this.state.frames} />
       </div>
     );
   }
