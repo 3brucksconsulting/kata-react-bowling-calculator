@@ -16,12 +16,14 @@ class App extends React.Component {
   }
 
   handlePinButtonClick(event) {
-    let roll = Number(event.target.value);
-    let frames = calculator.addRoll(this.state.frames, roll);
-    let nextAvailablePins = calculator.calculateNextAvailablePins(frames);
+    const roll = Number(event.target.value);
+    const frames = calculator.addRoll(this.state.frames, roll);
+    const scores = calculator.calculateScores(frames);
+    const nextAvailablePins = calculator.calculateNextAvailablePins(frames);
     
     console.log('roll: ', roll);
     console.log('frames: ', frames);
+    console.log('scores: ', scores);
     console.log('nextAvailablePins: ', nextAvailablePins);
 
     this.setState({
