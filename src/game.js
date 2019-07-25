@@ -31,7 +31,7 @@ const Game = props => {
           <div className='frame-header'>3</div>
           <div className='frame-rolls'>
             <div className='frame-first-roll'>9</div>
-            <div className='frame-second-roll'>1</div>
+            <div className='frame-second-roll'>/</div>
           </div>
           <div className='frame-total'>47</div>
         </div>
@@ -49,7 +49,7 @@ const Game = props => {
           <div className='frame-header'>5</div>
           <div className='frame-rolls'>
             <div className='frame-first-roll'>9</div>
-            <div className='frame-second-roll'>0</div>
+            <div className='frame-second-roll'>-</div>
           </div>
           <div className='frame-total'>75</div>
         </div>
@@ -76,7 +76,7 @@ const Game = props => {
           <div className='frame-header'>8</div>
           <div className='frame-rolls'>
             <div className='frame-first-roll'>8</div>
-            <div className='frame-second-roll'>0</div>
+            <div className='frame-second-roll'>-</div>
           </div>
           <div className='frame-total'>129</div>
         </div>
