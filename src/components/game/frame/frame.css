@@ -1,0 +1,107 @@
+.frame:first-of-type {
+  border: solid thin black;
+  box-sizing: border-box;
+  float: left;
+  font-size: large;
+  font-weight: bold;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  width: 8.333%;
+}
+
+.frame {
+  border-bottom: solid thin black;
+  border-left: none;
+  border-right: solid thin black;
+  border-top: solid thin black;
+  box-sizing: border-box;
+  float: left;
+  font-size: large;
+  font-weight: bold;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  width: 8.333%;
+}
+
+.frame-header {
+  background-color: #bbbb9d;
+  box-sizing: border-box;
+  padding-top: 3px;
+  text-align: center;
+}
+
+.frame-rolls {
+  box-sizing: border-box;
+  float: left;
+  height: 33px;
+  margin: 0px;
+  width: 100%;
+}
+
+.frame-first-roll {
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  margin: 0;
+  padding-top: 6px;
+  width: 50%;
+}
+
+.frame-second-roll {
+  border-bottom: solid thin black;
+  border-left: solid thin black;
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  padding-top: 6px;
+  width: 50%;
+}
+
+.frame-tenth-first-roll {
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  margin: 0;
+  padding-top: 6px;
+  width: 33%;
+}
+
+.frame-tenth-second-roll {
+  border-bottom: solid thin black;
+  border-left: solid thin black;
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  margin: 0;
+  padding-top: 6px;
+  width: 33%;
+}
+
+.frame-tenth-third-roll {
+  border-bottom: solid thin black;
+  border-left: solid thin black;
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  margin: 0;
+  padding-top: 6px;
+  width: 33%;
+}
+
+.frame-total {
+  border-top: 1px #000 solid;
+  box-sizing: border-box;
+  height: 66px;
+  margin: 0;
+  padding-top: 36px;
+  text-align: center;
+  width: 100%;
+}
+
+.frame-rolls.active-frame,
+.frame-total.active-frame {
+  background-color: bisque;
+  border-top: 1px #000 solid;
+}
