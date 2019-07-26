@@ -1,7 +1,7 @@
 import React from 'react';
-import * as calculator from './calculator';
-import './bootstrap.min.css';
+import * as calculator from '../../utils/calculator/calculator';
 import './game.css';
+import '../../bootstrap.min.css';
 
 const Game = props => {
   const formattedFrames = calculator.formatFrames(props.frames);

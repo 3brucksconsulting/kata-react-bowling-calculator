@@ -1,6 +1,6 @@
 import React from 'react';
-import './bootstrap.min.css';
-import './pin_buttons.css';
+import './pin-buttons.css';
+import '../../bootstrap.min.css';
 
 const PinButtons = props => {
   return (

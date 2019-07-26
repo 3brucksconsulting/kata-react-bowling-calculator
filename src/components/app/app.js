@@ -1,8 +1,8 @@
 import React from 'react';
-import PinButtons from './pin_buttons';
-import Game from './game';
-import * as calculator from './calculator';
-import './bootstrap.min.css';
+import PinButtons from '../pin-buttons/pin-buttons';
+import Game from '../game/game';
+import * as calculator from '../../utils/calculator/calculator';
+import '../../bootstrap.min.css';
 
 class App extends React.Component {
   constructor() {
