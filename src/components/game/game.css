@@ -39,7 +39,7 @@
 .frame-rolls {
   box-sizing: border-box;
   float: left;
-  height: 35%;
+  height: 33px;
   margin: 0px;
   width: 100%;
 }
@@ -97,7 +97,7 @@
 .frame-total {
   border-top: 1px #000 solid;
   box-sizing: border-box;
-  height: 50%;
+  height: 66px;
   margin: 0;
   padding-top: 36px;
   text-align: center;

@@ -10,7 +10,9 @@ class App extends React.Component {
 
     this.state = {
       frames: [],
+      isGameOver: false,
       nextAvailablePins: 10,
+      scores: []
     };
 
     this.handlePinButtonClick = this.handlePinButtonClick.bind(this);
@@ -21,23 +23,31 @@ class App extends React.Component {
     const roll = Number(event.target.value);
     const frames = calculator.addRoll(this.state.frames, roll);
     const nextAvailablePins = calculator.calculateNextAvailablePins(frames);
-    
+    const scores = calculator.calculateScores(frames);
+    const isGameOver = scores.length === 10;
+
     console.log('roll: ', roll);
     console.log('frames: ', frames);
+    console.log('isGameOver: ', isGameOver);
     console.log('nextAvailablePins: ', nextAvailablePins);
+    console.log('scores: ', scores);
 
     this.setState({
       frames: frames,
+      isGameOver: isGameOver,
       nextAvailablePins: nextAvailablePins,
+      scores: scores
     });
   }
 
   handleStartNewGameClick(event) {
-    console.log("Start New Game");
+    console.log('Start New Game');
 
     this.setState({
       frames: [],
+      isGameOver: false,
       nextAvailablePins: 10,
+      scores: []
     });
   }
 
@@ -45,11 +55,12 @@ class App extends React.Component {
     return (
       <div className='container-fluid'>
         <PinButtons
+          isGameOver={this.state.isGameOver}
           nextAvailablePins={this.state.nextAvailablePins}
           handlePinButtonClick={this.handlePinButtonClick}
           handleStartNewGameClick={this.handleStartNewGameClick}
         />
-        <Game frames={this.state.frames} />
+        <Game frames={this.state.frames} scores={this.state.scores} />
       </div>
     );
   }

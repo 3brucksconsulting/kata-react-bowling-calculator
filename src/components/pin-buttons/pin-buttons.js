@@ -11,6 +11,7 @@ const PinButtons = props => {
           {[...Array(props.nextAvailablePins + 1).keys()].map(x => (
             <button
               className='btn btn-outline-dark'
+              disabled={props.isGameOver}
               key={x}
               type='button'
               value={x}
@@ -25,6 +26,7 @@ const PinButtons = props => {
       <div className='col-md-3'>
         <button
           className='btn btn-primary'
+          disabled={!props.isGameOver}
           type='button'
           onClick={props.handleStartNewGameClick}
         >
