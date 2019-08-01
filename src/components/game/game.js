@@ -10,30 +10,15 @@ const Game = props => {
   return (
     <div className='row game'>
       <div className='col-md-12'>
-        {[...Array(9).keys()].map(i => (
+        {[...Array(10).keys()].map(i => (
           <Frame
+            key={i}
             frameNumber={i + 1}
             formattedFrame={formattedFrames[i]}
             score={props.scores[i]}
-            active={"true"}
+            active={(i + 1) === props.currentFrame}
           />
         ))}
-
-        <div className='frame'>
-          <div className='frame-header'>10</div>
-          <div className='frame-rolls'>
-            <div className='frame-tenth-first-roll'>
-              {formattedFrames[9][0]}
-            </div>
-            <div className='frame-tenth-second-roll'>
-              {formattedFrames[9][1]}
-            </div>
-            <div className='frame-tenth-third-roll'>
-              {formattedFrames[9][2]}
-            </div>
-          </div>
-          <div className='frame-total'>{props.scores[9]}</div>
-        </div>
       </div>
     </div>
   );

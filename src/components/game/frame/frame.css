@@ -102,6 +102,6 @@
 
 .frame-rolls.active-frame,
 .frame-total.active-frame {
-  background-color: bisque;
+  background-color: rgb(224, 255, 255);
   border-top: 1px #000 solid;
 }

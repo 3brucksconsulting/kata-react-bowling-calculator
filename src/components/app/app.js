@@ -9,6 +9,7 @@ class App extends React.Component {
     super();
 
     this.state = {
+      currentFrame: 1,
       frames: [],
       isGameOver: false,
       nextAvailablePins: 10,
@@ -27,6 +28,7 @@ class App extends React.Component {
     const isGameOver = scores.length === 10;
 
     console.log('roll: ', roll);
+    console.log('currentFrame: ', this.state.currentFrame);
     console.log('frames: ', frames);
     console.log('isGameOver: ', isGameOver);
     console.log('nextAvailablePins: ', nextAvailablePins);
@@ -44,6 +46,7 @@ class App extends React.Component {
     console.log('Start New Game');
 
     this.setState({
+      currentFrame: 1,
       frames: [],
       isGameOver: false,
       nextAvailablePins: 10,
@@ -60,7 +63,11 @@ class App extends React.Component {
           handlePinButtonClick={this.handlePinButtonClick}
           handleStartNewGameClick={this.handleStartNewGameClick}
         />
-        <Game frames={this.state.frames} scores={this.state.scores} />
+        <Game
+          currentFrame={this.state.currentFrame}
+          frames={this.state.frames}
+          scores={this.state.scores}
+        />
       </div>
     );
   }
