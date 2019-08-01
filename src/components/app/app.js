@@ -23,18 +23,20 @@ class App extends React.Component {
   handlePinButtonClick(event) {
     const roll = Number(event.target.value);
     const frames = calculator.addRoll(this.state.frames, roll);
+    const currentFrame = calculator.calculateCurrentFrame(frames);
     const nextAvailablePins = calculator.calculateNextAvailablePins(frames);
     const scores = calculator.calculateScores(frames);
     const isGameOver = scores.length === 10;
 
     console.log('roll: ', roll);
-    console.log('currentFrame: ', this.state.currentFrame);
+    console.log('currentFrame: ', currentFrame);
     console.log('frames: ', frames);
     console.log('isGameOver: ', isGameOver);
     console.log('nextAvailablePins: ', nextAvailablePins);
     console.log('scores: ', scores);
 
     this.setState({
+      currentFrame: currentFrame,
       frames: frames,
       isGameOver: isGameOver,
       nextAvailablePins: nextAvailablePins,

@@ -17,6 +17,23 @@ export function addRoll(frames, roll) {
   return frames;
 }
 
+export function calculateCurrentFrame(frames) {
+  if (frames.length === 0) {
+    return 1;
+  }
+
+  let lastFrame = frames[frames.length - 1];
+  let frameTotal = lastFrame.reduce((a, b) => a + b, 0);
+
+  if (frames.length === 10) {
+    return 10;
+  } else if (lastFrame.length > 1 || frameTotal === 10) {
+    return frames.length + 1;
+  } else {
+    return frames.length;
+  }
+}
+
 export function calculateNextAvailablePins(frames) {
   let lastFrame = frames[frames.length - 1];
   let frameTotal = lastFrame.reduce((a, b) => a + b, 0);

@@ -461,6 +461,312 @@ describe('addRoll', () => {
   });
 });
 
+describe('calculateCurrentFrame', () => {
+  it('givenNewGame_returnsOne', () => {
+    const frames = [];
+    const result = 1;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenNewGameWithFirstRollEight_returnsOne', () => {
+    const frames = [[8]];
+    const result = 1;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenSecondRollOne_returnsTwo', () => {
+    const frames = [[8, 1]];
+    const result = 2;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenThirdRollMiss_returnsTwo', () => {
+    const frames = [[8, 1], [0]];
+    const result = 2;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenFourthRollNine_returnsThree', () => {
+    const frames = [[8, 1], [0, 9]];
+    const result = 3;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenFifthRollEight_returnsThree', () => {
+    const frames = [[8, 1], [0, 9], [8]];
+    const result = 3;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenSixthRollSpare_returnsFour', () => {
+    const frames = [[8, 1], [0, 9], [8, 2]];
+    const result = 4;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenSeventhRollStrike_returnsFive', () => {
+    const frames = [[8, 1], [0, 9], [8, 2], [10]];
+    const result = 5;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenEighthRollNine_returnsFive', () => {
+    const frames = [[8, 1], [0, 9], [8, 2], [10], [9]];
+    const result = 5;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenNinthRollMiss_returnsSix', () => {
+    const frames = [[8, 1], [0, 9], [8, 2], [10], [9, 0]];
+    const result = 6;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenTenthFrameFirstRollMiss_returnsTen', () => {
+    const frames = [
+      [8, 1],
+      [0, 9],
+      [8, 2],
+      [10],
+      [9, 0],
+      [7, 3],
+      [8, 0],
+      [7, 3],
+      [6, 2],
+      [0]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenTenthFrameFirstRollEight_returnsTen', () => {
+    const frames = [
+      [8, 1],
+      [0, 9],
+      [8, 2],
+      [10],
+      [9, 0],
+      [7, 3],
+      [8, 0],
+      [7, 3],
+      [6, 2],
+      [8]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenTenthFrameFirstRollStrike_returnsTen', () => {
+    const frames = [
+      [8, 1],
+      [0, 9],
+      [8, 2],
+      [10],
+      [9, 0],
+      [7, 3],
+      [8, 0],
+      [7, 3],
+      [6, 2],
+      [10]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenTenthFrameSecondRollMiss_returnsTen', () => {
+    const frames = [
+      [8, 1],
+      [0, 9],
+      [8, 2],
+      [10],
+      [9, 0],
+      [7, 3],
+      [8, 0],
+      [7, 3],
+      [6, 2],
+      [8, 0]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenTenthFrameSecondRollOne_returnsTen', () => {
+    const frames = [
+      [8, 1],
+      [0, 9],
+      [8, 2],
+      [10],
+      [9, 0],
+      [7, 3],
+      [8, 0],
+      [7, 3],
+      [6, 2],
+      [8, 1]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenTenthFrameSecondRollSpare_returnsTen', () => {
+    const frames = [
+      [8, 1],
+      [0, 9],
+      [8, 2],
+      [10],
+      [9, 0],
+      [7, 3],
+      [8, 0],
+      [7, 3],
+      [6, 2],
+      [8, 2]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenTenthFrameSecondRollStrike_returnsTen', () => {
+    const frames = [
+      [8, 1],
+      [0, 9],
+      [8, 2],
+      [10],
+      [9, 0],
+      [7, 3],
+      [8, 0],
+      [7, 3],
+      [6, 2],
+      [10, 10]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenTenthFrameThirdRollMiss_returnsTen', () => {
+    const frames = [
+      [8, 1],
+      [0, 9],
+      [8, 2],
+      [10],
+      [9, 0],
+      [7, 3],
+      [8, 0],
+      [7, 3],
+      [6, 2],
+      [8, 2, 0]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenTenthFrameThirdRollNine_returnsTen', () => {
+    const frames = [
+      [8, 1],
+      [0, 9],
+      [8, 2],
+      [10],
+      [9, 0],
+      [7, 3],
+      [8, 0],
+      [7, 3],
+      [6, 2],
+      [8, 2, 9]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenTenthFrameThirdRollSpare_returnsTen', () => {
+    const frames = [
+      [8, 1],
+      [0, 9],
+      [8, 2],
+      [10],
+      [9, 0],
+      [7, 3],
+      [8, 0],
+      [7, 3],
+      [6, 2],
+      [10, 8, 2]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenTenthFrameThirdRollStrike_returnsTen', () => {
+    const frames = [
+      [8, 1],
+      [0, 9],
+      [8, 2],
+      [10],
+      [9, 0],
+      [7, 3],
+      [8, 0],
+      [7, 3],
+      [6, 2],
+      [8, 2, 10]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenMissGame_returnsTen', () => {
+    const frames = [
+      [0, 0],
+      [0, 0],
+      [0, 0],
+      [0, 0],
+      [0, 0],
+      [0, 0],
+      [0, 0],
+      [0, 0],
+      [0, 0],
+      [0, 0]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+
+  it('givenPerfectGame_returnsTen', () => {
+    const frames = [
+      [10],
+      [10],
+      [10],
+      [10],
+      [10],
+      [10],
+      [10],
+      [10],
+      [10],
+      [10, 10, 10]
+    ];
+    const result = 10;
+
+    expect(calculator.calculateCurrentFrame(frames)).toEqual(result);
+  });
+});
+
 describe('calculateNextAvailablePins', () => {
   it('givenNewGameWithFirstRollEight_returnsTwo', () => {
     const frames = [[8]];
