@@ -13,6 +13,7 @@ const PinButtons = props => {
               className='btn btn-outline-dark'
               disabled={props.isGameOver}
               key={x}
+              title={x}
               type='button'
               value={x}
               onClick={props.handlePinButtonClick}
@@ -27,6 +28,7 @@ const PinButtons = props => {
         <button
           className='btn btn-primary'
           disabled={!props.isGameOver}
+          title='Start New Game'
           type='button'
           onClick={props.handleStartNewGameClick}
         >
