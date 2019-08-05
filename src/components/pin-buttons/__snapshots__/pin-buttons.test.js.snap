@@ -1,0 +1,1015 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The PinButtons component givenEightAvailablePins_rendersAsExpected 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-9"
+  >
+    <h5>
+      Click the Number of Pins Knocked Down
+    </h5>
+    <div
+      className="btn-toolbar"
+    >
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={0}
+        type="button"
+        value={0}
+      >
+        0
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={1}
+        type="button"
+        value={1}
+      >
+        1
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={2}
+        type="button"
+        value={2}
+      >
+        2
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={3}
+        type="button"
+        value={3}
+      >
+        3
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={4}
+        type="button"
+        value={4}
+      >
+        4
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={5}
+        type="button"
+        value={5}
+      >
+        5
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={6}
+        type="button"
+        value={6}
+      >
+        6
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={7}
+        type="button"
+        value={7}
+      >
+        7
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={8}
+        type="button"
+        value={8}
+      >
+        8
+      </button>
+    </div>
+  </div>
+  <div
+    className="col-md-3"
+  >
+    <button
+      className="btn btn-primary"
+      disabled={true}
+      title="Start New Game"
+      type="button"
+    >
+      Start New Game
+    </button>
+  </div>
+</div>
+`;
+
+exports[`The PinButtons component givenFiveAvailablePins_rendersAsExpected 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-9"
+  >
+    <h5>
+      Click the Number of Pins Knocked Down
+    </h5>
+    <div
+      className="btn-toolbar"
+    >
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={0}
+        type="button"
+        value={0}
+      >
+        0
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={1}
+        type="button"
+        value={1}
+      >
+        1
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={2}
+        type="button"
+        value={2}
+      >
+        2
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={3}
+        type="button"
+        value={3}
+      >
+        3
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={4}
+        type="button"
+        value={4}
+      >
+        4
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={5}
+        type="button"
+        value={5}
+      >
+        5
+      </button>
+    </div>
+  </div>
+  <div
+    className="col-md-3"
+  >
+    <button
+      className="btn btn-primary"
+      disabled={true}
+      title="Start New Game"
+      type="button"
+    >
+      Start New Game
+    </button>
+  </div>
+</div>
+`;
+
+exports[`The PinButtons component givenFourAvailablePins_rendersAsExpected 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-9"
+  >
+    <h5>
+      Click the Number of Pins Knocked Down
+    </h5>
+    <div
+      className="btn-toolbar"
+    >
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={0}
+        type="button"
+        value={0}
+      >
+        0
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={1}
+        type="button"
+        value={1}
+      >
+        1
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={2}
+        type="button"
+        value={2}
+      >
+        2
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={3}
+        type="button"
+        value={3}
+      >
+        3
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={4}
+        type="button"
+        value={4}
+      >
+        4
+      </button>
+    </div>
+  </div>
+  <div
+    className="col-md-3"
+  >
+    <button
+      className="btn btn-primary"
+      disabled={true}
+      title="Start New Game"
+      type="button"
+    >
+      Start New Game
+    </button>
+  </div>
+</div>
+`;
+
+exports[`The PinButtons component givenIsGameOverTrue_rendersAsExpected 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-9"
+  >
+    <h5>
+      Click the Number of Pins Knocked Down
+    </h5>
+    <div
+      className="btn-toolbar"
+    >
+      <button
+        className="btn btn-outline-dark"
+        disabled={true}
+        title={0}
+        type="button"
+        value={0}
+      >
+        0
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={true}
+        title={1}
+        type="button"
+        value={1}
+      >
+        1
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={true}
+        title={2}
+        type="button"
+        value={2}
+      >
+        2
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={true}
+        title={3}
+        type="button"
+        value={3}
+      >
+        3
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={true}
+        title={4}
+        type="button"
+        value={4}
+      >
+        4
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={true}
+        title={5}
+        type="button"
+        value={5}
+      >
+        5
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={true}
+        title={6}
+        type="button"
+        value={6}
+      >
+        6
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={true}
+        title={7}
+        type="button"
+        value={7}
+      >
+        7
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={true}
+        title={8}
+        type="button"
+        value={8}
+      >
+        8
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={true}
+        title={9}
+        type="button"
+        value={9}
+      >
+        9
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={true}
+        title={10}
+        type="button"
+        value={10}
+      >
+        10
+      </button>
+    </div>
+  </div>
+  <div
+    className="col-md-3"
+  >
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      title="Start New Game"
+      type="button"
+    >
+      Start New Game
+    </button>
+  </div>
+</div>
+`;
+
+exports[`The PinButtons component givenNineAvailablePins_rendersAsExpected 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-9"
+  >
+    <h5>
+      Click the Number of Pins Knocked Down
+    </h5>
+    <div
+      className="btn-toolbar"
+    >
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={0}
+        type="button"
+        value={0}
+      >
+        0
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={1}
+        type="button"
+        value={1}
+      >
+        1
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={2}
+        type="button"
+        value={2}
+      >
+        2
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={3}
+        type="button"
+        value={3}
+      >
+        3
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={4}
+        type="button"
+        value={4}
+      >
+        4
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={5}
+        type="button"
+        value={5}
+      >
+        5
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={6}
+        type="button"
+        value={6}
+      >
+        6
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={7}
+        type="button"
+        value={7}
+      >
+        7
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={8}
+        type="button"
+        value={8}
+      >
+        8
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={9}
+        type="button"
+        value={9}
+      >
+        9
+      </button>
+    </div>
+  </div>
+  <div
+    className="col-md-3"
+  >
+    <button
+      className="btn btn-primary"
+      disabled={true}
+      title="Start New Game"
+      type="button"
+    >
+      Start New Game
+    </button>
+  </div>
+</div>
+`;
+
+exports[`The PinButtons component givenOneAvailablePin_rendersAsExpected 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-9"
+  >
+    <h5>
+      Click the Number of Pins Knocked Down
+    </h5>
+    <div
+      className="btn-toolbar"
+    >
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={0}
+        type="button"
+        value={0}
+      >
+        0
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={1}
+        type="button"
+        value={1}
+      >
+        1
+      </button>
+    </div>
+  </div>
+  <div
+    className="col-md-3"
+  >
+    <button
+      className="btn btn-primary"
+      disabled={true}
+      title="Start New Game"
+      type="button"
+    >
+      Start New Game
+    </button>
+  </div>
+</div>
+`;
+
+exports[`The PinButtons component givenSevenAvailablePins_rendersAsExpected 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-9"
+  >
+    <h5>
+      Click the Number of Pins Knocked Down
+    </h5>
+    <div
+      className="btn-toolbar"
+    >
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={0}
+        type="button"
+        value={0}
+      >
+        0
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={1}
+        type="button"
+        value={1}
+      >
+        1
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={2}
+        type="button"
+        value={2}
+      >
+        2
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={3}
+        type="button"
+        value={3}
+      >
+        3
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={4}
+        type="button"
+        value={4}
+      >
+        4
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={5}
+        type="button"
+        value={5}
+      >
+        5
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={6}
+        type="button"
+        value={6}
+      >
+        6
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={7}
+        type="button"
+        value={7}
+      >
+        7
+      </button>
+    </div>
+  </div>
+  <div
+    className="col-md-3"
+  >
+    <button
+      className="btn btn-primary"
+      disabled={true}
+      title="Start New Game"
+      type="button"
+    >
+      Start New Game
+    </button>
+  </div>
+</div>
+`;
+
+exports[`The PinButtons component givenSixAvailablePins_rendersAsExpected 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-9"
+  >
+    <h5>
+      Click the Number of Pins Knocked Down
+    </h5>
+    <div
+      className="btn-toolbar"
+    >
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={0}
+        type="button"
+        value={0}
+      >
+        0
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={1}
+        type="button"
+        value={1}
+      >
+        1
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={2}
+        type="button"
+        value={2}
+      >
+        2
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={3}
+        type="button"
+        value={3}
+      >
+        3
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={4}
+        type="button"
+        value={4}
+      >
+        4
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={5}
+        type="button"
+        value={5}
+      >
+        5
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={6}
+        type="button"
+        value={6}
+      >
+        6
+      </button>
+    </div>
+  </div>
+  <div
+    className="col-md-3"
+  >
+    <button
+      className="btn btn-primary"
+      disabled={true}
+      title="Start New Game"
+      type="button"
+    >
+      Start New Game
+    </button>
+  </div>
+</div>
+`;
+
+exports[`The PinButtons component givenTenAvailablePins_rendersAsExpected 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-9"
+  >
+    <h5>
+      Click the Number of Pins Knocked Down
+    </h5>
+    <div
+      className="btn-toolbar"
+    >
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={0}
+        type="button"
+        value={0}
+      >
+        0
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={1}
+        type="button"
+        value={1}
+      >
+        1
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={2}
+        type="button"
+        value={2}
+      >
+        2
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={3}
+        type="button"
+        value={3}
+      >
+        3
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={4}
+        type="button"
+        value={4}
+      >
+        4
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={5}
+        type="button"
+        value={5}
+      >
+        5
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={6}
+        type="button"
+        value={6}
+      >
+        6
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={7}
+        type="button"
+        value={7}
+      >
+        7
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={8}
+        type="button"
+        value={8}
+      >
+        8
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={9}
+        type="button"
+        value={9}
+      >
+        9
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={10}
+        type="button"
+        value={10}
+      >
+        10
+      </button>
+    </div>
+  </div>
+  <div
+    className="col-md-3"
+  >
+    <button
+      className="btn btn-primary"
+      disabled={true}
+      title="Start New Game"
+      type="button"
+    >
+      Start New Game
+    </button>
+  </div>
+</div>
+`;
+
+exports[`The PinButtons component givenThreeAvailablePins_rendersAsExpected 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-9"
+  >
+    <h5>
+      Click the Number of Pins Knocked Down
+    </h5>
+    <div
+      className="btn-toolbar"
+    >
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={0}
+        type="button"
+        value={0}
+      >
+        0
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={1}
+        type="button"
+        value={1}
+      >
+        1
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={2}
+        type="button"
+        value={2}
+      >
+        2
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={3}
+        type="button"
+        value={3}
+      >
+        3
+      </button>
+    </div>
+  </div>
+  <div
+    className="col-md-3"
+  >
+    <button
+      className="btn btn-primary"
+      disabled={true}
+      title="Start New Game"
+      type="button"
+    >
+      Start New Game
+    </button>
+  </div>
+</div>
+`;
+
+exports[`The PinButtons component givenTwoAvailablePins_rendersAsExpected 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-9"
+  >
+    <h5>
+      Click the Number of Pins Knocked Down
+    </h5>
+    <div
+      className="btn-toolbar"
+    >
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={0}
+        type="button"
+        value={0}
+      >
+        0
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={1}
+        type="button"
+        value={1}
+      >
+        1
+      </button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={false}
+        title={2}
+        type="button"
+        value={2}
+      >
+        2
+      </button>
+    </div>
+  </div>
+  <div
+    className="col-md-3"
+  >
+    <button
+      className="btn btn-primary"
+      disabled={true}
+      title="Start New Game"
+      type="button"
+    >
+      Start New Game
+    </button>
+  </div>
+</div>
+`;
