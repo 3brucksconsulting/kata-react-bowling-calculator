@@ -1074,7 +1074,7 @@ describe('calculateScores', () => {
     expect(calculator.calculateScores(frames)).toEqual(result);
   });
 
-  it('givenNewGameWithFirstRollEight_returnsNoScores', () => {
+  it('givenFirstRollEight_returnsNoScores', () => {
     const frames = [[8]];
     const result = [];
 
